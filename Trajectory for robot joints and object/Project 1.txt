@@ -1,0 +1,27 @@
+ECE 455 Project 1
+
+The submitted files include matlab scripts for the the robot as well as the object along with the output robot.ang 
+and object.traj files.
+The robot.m file will read the given .key file and perform hermite interpolation and generate robot.ang file.
+The object.m file will read data from the appropriate .key file (object.key in this case), convert the rotation matrix to quaternion, 
+perform quaternion interpolation and then convert the interpolated values to a rotation matrix form. Position interpolation is done by
+means of Catmull Rom. 
+
+
+a. If multiple Matlab scripts are used, what is the top-level script? 
+   For generating the obeject.traj file, the object.m file is the top level script with the R to Q, Quaternion Interpolation and Q to R scripts
+   being used in the top level script. The quaternion to rotation matrix has been slightly modified. 
+
+b. What was the most difficult part of the project? 
+   The most difficult part of the project was, understanding the working of Animate and generating the object.traj file
+   by means of quaternion and catmull rom interpolation
+
+c. How can the project be improved?
+   Additional .key files and examples could have been provided to obtain a better understanding of the working of animate.
+
+Submitted Files:
+robot.m
+object.m
+robot.ang
+object.traj
+Q_to_R.m (Modified script for quaternion to rotation)
